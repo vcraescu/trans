@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// Parse text and replace all the placeholders that match with params keys
 func Parse(text string, params map[string]string) string {
 	if len(params) == 0 {
 		return text
@@ -57,6 +58,10 @@ func concat(arrs ...[]string) []string {
 }
 
 func tokenize(text string, needle string) []string {
+	if text == "" {
+		return []string{""}
+	}
+
 	parts := strings.Split(text, needle)
 	var tokens []string
 

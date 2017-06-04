@@ -1,14 +1,14 @@
 // Simple translator similar to the one from Symfony2/3 framework
-package trans_go
+package trans
 
 import (
 	"io/ioutil"
 	"errors"
 	"strings"
-	"github.com/vcraescu/trans-go/loaders"
+	"github.com/vcraescu/trans/loaders"
 	"path"
 	"log"
-	"github.com/vcraescu/trans-go/template"
+	"github.com/vcraescu/trans/template"
 	"github.com/vcraescu/databag"
 )
 

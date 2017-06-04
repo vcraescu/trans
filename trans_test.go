@@ -1,4 +1,4 @@
-package trans_go
+package trans
 
 import (
 	"testing"
